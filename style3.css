@@ -1,0 +1,172 @@
+/* Estilos para o cabeçalho */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background-image.jpg'); /* Substitua 'background-image.jpg' pelo caminho para a sua imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+header {
+    background-color: #add8e6; /* Azul pastel */
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+header img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+header h1 {
+    font-size: 36px;
+    color: #ff6666; /* Vermelho pastel */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+    background-color: #add8e6; /* Azul pastel */
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #98fb98;
+    border: 2px solid #90ee90; 
+    transition: all 0.3s ease;
+}
+nav ul li a:hover {
+   background-color: #90ee90;
+   transform: scale(1,1);
+}
+
+/* Estilos para as seções */
+section {
+    padding: 25px;
+    background-color: #ffff99; /* Amarelo pastel */
+    margin: 25px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #ff6666; /* Vermelho pastel */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    animation: fadeInUp 1s ease;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    background-color: #add8e6; /* Azul pastel */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer img {
+    width: 100px;
+    margin-top: 25px;
+}
+
+/* estilo para o elemento de carregamento */
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+.loader img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilos para a seção de depoimentos */
+#testimonials {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Cor de fundo para destacar os depoimentos */
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 30px; /* Centraliza e adiciona espaçamento entre os depoimentos */
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Deixa a imagem do cliente redonda */
+    margin-bottom: 25px; /* Adiciona espaçamento abaixo da imagem */
+    border: 2px solid #ccc;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #333; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.testimonial cite {
+    display: block;
+    font-style: italic;
+    margin-top: 25px; /* Adiciona espaçamento acima do nome do cliente */
+    color: #666; /* Cor do nome do cliente */
+}
